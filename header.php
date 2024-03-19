@@ -18,7 +18,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <!-- <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -51,7 +51,15 @@
                         <a class="nav-link" href="#contact">Contact US</a>
                     </li>
                     <button type="button" class="rounded-pill btn btn-outline-primary mx-4 text-light">Get Started</button>
-                </ul>
+                </ul> -->
+                <?php
+
+                wp_nav_menu(array(
+                    'theme_location' => 'primary',
+                    'menu_class' => 'navbar-2'
+                ))
+
+                ?>
             </div>
         </div>
     </nav>

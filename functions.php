@@ -1,6 +1,8 @@
 <?php
 
-function  icodeguru_files()
+use function PHPSTORM_META\registerArgumentsSet;
+
+function icodeguru_files()
 {
     wp_enqueue_style('bootstrap-cdn', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
@@ -11,3 +13,19 @@ function  icodeguru_files()
 }
 
 add_action('wp_enqueue_scripts', 'icodeguru_files');
+
+
+// register_nav_menu('primary', 'Main Menu');
+// register_nav_menu('secondary', 'Secondary Menu');
+
+
+function icodeguru_features()
+{
+    register_nav_menus(array(
+        'primary' => 'Main Menu',
+        'secondary' => 'Secondary Menu',
+        'useful'  => 'Useful Links'
+    ));
+}
+
+add_action('after_setup_theme', 'icodeguru_features');

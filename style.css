@@ -152,27 +152,16 @@ footer{
 }
 
 
-
-#mymenu {
-  background-color: #f8f9fa;
-  padding: 10px;
-}
-
-.navbar-2 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar-2{
   display: flex;
-  justify-content: center;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
 }
 
-.navbar-2 li {
-  margin: 0 10px;
-}
-
-.navbar-2 li a {
+.navbar-2 a {
+  margin-right: 10px;
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  font-size: 18px;
 }
- 
