@@ -19,13 +19,15 @@ add_action('wp_enqueue_scripts', 'icodeguru_files');
 // register_nav_menu('secondary', 'Secondary Menu');
 
 
-function icodeguru_features()
+function icodeguru_theme_features()
 {
     register_nav_menus(array(
         'primary' => 'Main Menu',
         'secondary' => 'Secondary Menu',
         'useful'  => 'Useful Links'
     ));
+
+    add_theme_support('custom-logo');
 }
 
-add_action('after_setup_theme', 'icodeguru_features');
+add_action('after_setup_theme', 'icodeguru_theme_features');

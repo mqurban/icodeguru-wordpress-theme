@@ -46,7 +46,22 @@ get_header();
             </div>
         </div>
     </section>
+    <section class="all-posts">
+        <h1>All Posts</h1>
 
+        <?php
+
+
+        while (have_posts()) {
+            the_post() ?>
+
+            <h1><?php the_title();  ?></h1>
+            <p><?php the_content();  ?></p>
+            <p><?php get_the_title();  ?></p>
+
+        <?php }
+        ?>
+    </section>
     <section class="about_us mt-5" id="about">
         <div class="container">
             <div class="row mt-5 mb-5">
