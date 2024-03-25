@@ -5,18 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Web</title>
-    <!-- <link rel="stylesheet" href=""> -->
     <link rel="stylesheet" href=".Fonts/stylesheet.css">
-    <link rel="stylesheet" href="style.css">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <div class="custom-logo">
-
                 <?php echo get_custom_logo();   ?>
-
             </div>
-
 
             <a class="navbar-brand" href="#">
                 <h1><?php bloginfo('name');   ?></h1>

@@ -28,6 +28,22 @@ function icodeguru_theme_features()
     ));
 
     add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'icodeguru_theme_features');
+
+
+
+// Register Sidebar
+function icodeguru_sidebars()
+{
+    register_sidebar(array(
+        'name'  => ('Sidebar 1'),
+        'id' => 'sidebar-1',
+        'before_widget' => '<section id="first-sidebar" class="sidebar1">',
+        'after_widget' => '</section>'
+    ));
+}
+
+add_action('widgets_init', 'icodeguru_sidebars');
